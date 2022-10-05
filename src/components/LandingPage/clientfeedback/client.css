@@ -1,0 +1,10 @@
+article.NextSlide{
+    transform: translate(100%);
+}
+article.LastSlide{
+    transform: translate(-100%);
+}
+article.ActiveSlide{
+    transform: translate(0);
+    opacity: 1;
+}
