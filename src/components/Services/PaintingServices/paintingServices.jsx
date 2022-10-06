@@ -4,6 +4,7 @@ import ExtPaint from '../../../assets/painting/paint3.jpg'
 import CustomPaint from '../../../assets/painting/paint5.jpg'
 import IntPaint from '../../../assets/painting/paint13BG.jpg'
 import WallPaper from '../../../assets/wallpaper/wallpaper1.jpg'
+import {GiCheckMark} from 'react-icons/gi'
 import Image1 from '../../../assets/painting/paint4.jpg'
 import Image2 from '../../../assets/painting/paint3.jpg'
 import Image3 from '../../../assets/painting/paint1.jpg'
@@ -43,6 +44,15 @@ const PaintingServices = () => {
         to your house, workplace, etc..`},
     ]
 
+    const paintAbout = [
+        {id:1, details:`Your health is taken into consideration when applying any paint.`},
+        {id:2, details:`We thoroughly clean the surfaces that will be painted and maintain them by fixing things like nail holes, dents, scratches, peeling paint, rust, etc.`},
+        {id:3, details:`Our paints are premium industrial paints that provide aesthetically pleasing, long-lasting finishes.`},
+        {id:4, details:`To maintain a relatively normal level of business, we offer flexible scheduling, working during your off-hours or slow seasons.`},
+        {id:5, details:`In addition to training our employees to protect the building's occupants, we always ensure the building's equipment and furnishings are protected as well.`},
+        {id:6, details:`We are flexible and offer a guarantee for selected project(s)`},
+        {id:7, details:`We employ paints that, in contrast to normal paint, are more resistant to adverse weather, such as rain and intense sunlight.`},
+    ]
     const images = [
         {id:1, img: Image1}, {id:2, img: Image2}, {id:3, img: Image3}, {id:4, img: Image4},
         {id:5, img: Image5}, {id:6, img: Image6}, {id:7, img: Image7}, {id:8, img: Image8},
@@ -88,6 +98,21 @@ const PaintingServices = () => {
             High-rise and low-rise buildings, estates, Banks, 
             Churches, Schools, warehouses, and highways.</p>
         </div>
+        <div className='lg:px-24 md:px-12 px-6 lg:py-12 md:py-4 py-4 flex flex-col justify-center items-center'>
+            <p className='lg:text-3xl font-bold text-xl mb-3'>About Our Painting Services</p>
+            <div className='flex flex-col justify-between items-start'>
+                {
+                    paintAbout.map((items)=>{
+                        return (
+                            <div key={items.id} className="flex justify-center items-center mb-4">
+                                <GiCheckMark className='mr-4 text-2xl font-bold text-green-900' />
+                                <p className='text-xl font-extralight opacity-50'>{items.details}</p>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+        </div>
         <RowReverse
             source={ paintServices[0].img }
             title = { paintServices[0].title }
@@ -111,6 +136,7 @@ const PaintingServices = () => {
             title = { paintServices[3].title }
             details = { paintServices[3].details }
         />
+        
         <div className='lg:px-24 md:px-12 px-6 lg:py-12 md:py-4 py-4 flex flex-col justify-center items-center'>
             <p className='lg:text-3xl font-bold text-xl mb-3'>Some of Our Past Jobs</p>
         </div>
