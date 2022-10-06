@@ -34,7 +34,7 @@ const Navigation = () => {
     },
   ]
   const links = [
-    {id:1, link:"home", to:"/"}, {id:2, link:"about us", to:"about"}, {id:3, link:"services", to:"services"}, {id:4, link:"contact", to:"contact"},
+    {id:1, link:"home", to:"/"}, {id:2, link:"about us", to:"/about"}, {id:3, link:"services", to:"/services"}, {id:4, link:"contact", to:"/contact"},
   ]
 
   return (
