@@ -65,7 +65,7 @@ const PaintingServices = () => {
                     <img src={source} alt="" className='rounded-lg' />
                 </div>
                 <div className='flex flex-col justify-center items-start md:w-[48%]'>
-                    <p className='md:text-3xl text-2xl font-bold text-green-500 mb-6'>{title}</p>
+                    <p className='md:text-3xl text-2xl font-bold text-green-900 mb-6'>{title}</p>
                     <p className='md:text-xl text-black opacity-50'>{details}</p>
                 </div>
             </div>
@@ -79,7 +79,7 @@ const PaintingServices = () => {
                     <img src={source} alt="" className='rounded-lg' />
                 </div>
                 <div className='flex flex-col justify-center items-start md:w-[48%]'>
-                    <p className='md:text-3xl text-2xl font-bold text-green-500 mb-6'>{title}</p>
+                    <p className='md:text-3xl text-2xl font-bold text-green-900 mb-6'>{title}</p>
                     <p className='md:text-xl text-black opacity-50'>{details}</p>
                 </div>
             </div>
@@ -88,12 +88,12 @@ const PaintingServices = () => {
 
   return (
     <Fragment>
-        <AboutHero title="Services > Painting Services"/>
+        <AboutHero title="Services - Painting Services"/>
         <div className='lg:px-24 md:px-12 px-6 lg:py-12 md:py-4 py-4 flex flex-col justify-center items-center'>
-            <p className='lg:text-3xl font-bold text-xl mb-3'><span className='text-green-500'>Painting</span>  Services We Offer</p>
-            <p className='font-bold mt-6'><span className='text-green-500'>Residential painting services we offer include:
+            <p className='lg:text-3xl font-bold text-xl mb-3'><span className='text-green-900'>Painting</span>  Services We Offer</p>
+            <p className='font-bold mt-6'><span className='text-green-900'>Residential painting services we offer include:
             </span> interior painting, exterior painting, Kitchen cabinet Painting, high ceilings painting, wallpaper, and 3D installation. <br />
-            <span className='text-green-500'> Among the commercial painting services we provide 
+            <span className='text-green-900'> Among the commercial painting services we provide 
             are: </span> painting of office buildings, retail stores, 
             High-rise and low-rise buildings, estates, Banks, 
             Churches, Schools, warehouses, and highways.</p>

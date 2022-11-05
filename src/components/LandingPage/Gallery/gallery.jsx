@@ -1,6 +1,7 @@
 import React from 'react'
-import Image1 from '../../../assets/painting/paint5.jpg'
-import Image2 from '../../../assets/painting/paint3.jpg'
+import Image1 from '../../../assets/screenshot.jpg'
+import Image3 from '../../../assets/winner1.jpg'
+import Image2 from '../../../assets/painting.jpg'
 import Image4 from '../../../assets/PictureClean/image1.jpg'
 
 
@@ -8,7 +9,7 @@ import Image4 from '../../../assets/PictureClean/image1.jpg'
 const Gallery = () => {
 
     const images = [
-        {id:1, img: Image1}, {id:2, img: Image2}, {id:3, img: 'https://media.istockphoto.com/photos/professional-cleaner-disinfecting-air-vents-at-a-factory-picture-id1307747009?k=20&m=1307747009&s=612x612&w=0&h=1MXjOu1V3fa6Y_Ahr4MZRvVcYZbhWipk5vx4tE9GfYw='},{id:4, img: Image4 }
+        {id:1, img: Image1}, {id:2, img: Image2}, {id:3, img: Image3},{id:4, img: Image4 }
     ]
 
   return (

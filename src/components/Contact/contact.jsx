@@ -49,13 +49,13 @@ const Contact = () => {
           </form>
 
           <div className='flex p-6 flex-col justify-between items-start h-full'>
-            <p className='md:text-xl text-base font-extralight text-green-500 mb-3'>Call Us, Write Us, Or Knock On Our Door</p>
+            <p className='md:text-xl text-base font-extralight text-green-900 mb-3'>Call Us, Write Us, Or Knock On Our Door</p>
             <p className='text-green-900 mb-3 font-normal md:text-3xl text-2xl'>We Are Available To Attend To Your Cleaning Needs</p>
             <p className='mt-12 mb-3 text-xl font-extralight'>Call us, Send us a Message and we will reply you typically within 24 hours. </p>
             <p className='text-xl'>
               Sunday: Closed <br /> <br />
               Monday - Friday: 9am - 7pm <br /> <br />
-              Saturday: 9am - 5pm
+              Saturday: 10am - 4pm
             </p>
           </div>
         </div>

@@ -50,7 +50,7 @@ const Why = ({title}) => {
                       return(
                         <div key={items.id} className="md:w-[40%] w-full flex text-justify">
                             <div className='mr-3'>
-                              <div className='bg-green-500 rounded-full xl:p-3 p-1 h-auto w-auto'>
+                              <div className='bg-green-900 rounded-full xl:p-3 p-1 h-auto w-auto'>
                                 {items.icon}
                               </div>
                             </div>

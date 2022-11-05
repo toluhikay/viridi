@@ -61,7 +61,7 @@ const Fumigation = () => {
                     <img src={source} alt="" className='rounded-lg' />
                 </div>
                 <div className='flex flex-col justify-center items-start md:w-[48%]'>
-                    <p className='md:text-3xl text-2xl font-bold text-green-500 mb-6'>{title}</p>
+                    <p className='md:text-3xl text-2xl font-bold text-green-900 mb-6'>{title}</p>
                     <p className='md:text-xl text-black opacity-50'>{details}</p>
                 </div>
             </div>
@@ -75,7 +75,7 @@ const Fumigation = () => {
                     <img src={source} alt="" className='rounded-lg' />
                 </div>
                 <div className='flex flex-col justify-center items-start md:w-[48%]'>
-                    <p className='md:text-3xl text-2xl font-bold text-green-500 mb-6'>{title}</p>
+                    <p className='md:text-3xl text-2xl font-bold text-green-900 mb-6'>{title}</p>
                     <p className='md:text-xl text-black opacity-50'>{details}</p>
                 </div>
             </div>
@@ -85,15 +85,15 @@ const Fumigation = () => {
 
   return (
     <Fragment>
-        <AboutHero title="Services > Fumigation"/>
+        <AboutHero title="Services - Fumigation"/>
         
         <div className='lg:px-24 md:px-12 md:pt-8 px-6 py-3 flex flex-col justify-center items-center'>
-            <p className='lg:text-3xl md:text-2xl  font-bold text-sm text-center mb-3'><span className='text-green-500'>RESIDENTIAL AND COMMERCIAL</span> CONTRACT</p>
+            <p className='lg:text-3xl md:text-2xl  font-bold text-sm text-center mb-3'><span className='text-green-900'>RESIDENTIAL AND COMMERCIAL</span> CONTRACT</p>
             <p className='text-center'>To ensure that your company stays on top of any pest 
-            issues, we can set up a customized maintenance schedule. Contracts for pest management are crucial to 
+            issues, we can set up a customized maintenance schedule. Contracts for pest management are crucial to 
         preventing the recurrence of pest issues.</p>
         <div className='lg:px-24 md:px-12 px-6  py-3 lg:pt-12 flex flex-col justify-center items-center'>
-            <p className='lg:text-2xl font-bold text-xl text-center mb-3'><span className='text-green-500'>Fumigation & Pest Control</span>  Services We Offer</p>
+            <p className='lg:text-2xl font-bold text-xl text-center mb-3'><span className='text-green-900'>Fumigation & Pest Control</span>  Services We Offer</p>
         </div>
         </div>
         <NormalRow

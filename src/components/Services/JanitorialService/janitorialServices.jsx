@@ -39,15 +39,15 @@ const JanitorialService = () => {
 
   return (
     <Fragment>
-    <AboutHero title="Services > Janitorial Services"/>
+    <AboutHero title="Services - Janitorial Services"/>
     <div className="lg:px-24 bg-center bg-cover bg-no-repeat bg-fixed md:px-12 px-6 lg:py-6 md:py-6 py-3 flex flex-col justify-center items-center text-center">
-        <p className='lg:text-3xl font-bold text-xl mb-3'><span className='text-green-500'>Janitorial</span>  Services</p>
+        <p className='lg:text-3xl font-bold text-xl mb-3'><span className='text-green-900'>Janitorial</span>  Services</p>
         <p className='text-sm'>
-        We keep everything clean so you can relax. By understanding our client's needs and meeting their requirements to the greatest standards of professionalism and ethics in the business, we help to create clean, tranquil work environments for our clients. Your sleep is guaranteed, as well as your peace of mind. <br />
-        <span className='text-green-500'>...We are the finest with our excellent janitorial services...</span>
+        We keep everything clean so you can relax. By understanding our client's needs and meeting their requirements to the greatest standards of professionalism and ethics in the business, we help to create clean, tranquil work environments for our clients. Your sleep is guaranteed, as well as your peace of mind. <br />
+        <span className='text-green-900'>...We are the finest with our excellent janitorial services...</span>
         </p>
         <div className='mt-12'>
-            <p className='text-green-500 md:text-xl text-base font-bold'>We're here to add the ideal finishing touch to your space.</p>
+            <p className='text-green-900 md:text-xl text-base font-bold'>We're here to add the ideal finishing touch to your space.</p>
             <div className='flex flex-wrap justify-between items-center md:mb-0 mt-6 p-3 mb-3'>
                 {
                     janitorialService.map((items)=>{
@@ -68,7 +68,7 @@ const JanitorialService = () => {
         <div>
             {
                 servicesJanitorial.map((items)=>{
-                    return <p className='mb-6 text-justify'><span className='md:text-2xl text-xl font-bold text-green-500 mr-3'>{items.title}</span><span className='md:text-xl text-base font-extralight opacity-60'>{items.details}</span></p>
+                    return <p className='mb-6 text-justify'><span className='md:text-2xl text-xl font-bold text-green-900 mr-3'>{items.title}</span><span className='md:text-xl text-base font-extralight '>{items.details}</span></p>
                 })
             }
         </div>

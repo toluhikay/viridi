@@ -36,8 +36,10 @@ const Footer = () => {
     const links = [
         {id:1, link:"Fumigation and Pest Control", to:"fumigationServices"}, {id:2, link:"Painting Services", to:"paintServices"}, {id:2, link:"Janitorial Services", to:"janitorialServices"}
     ]
+    const date = new Date().getFullYear()
     
   return (
+    <div className='pb-12 bg-black'>
     <div className='bg-black opacity-90 text-white lg:px-24 md:px-12 px-6 md:py-24 py-12 flex flex-col md:flex-row justify-between'>
         <div className='w-[30%]'>
             <p className='lg:text-3xl md:text-2xl text-xl font-bold mb-6'>Viridi Consults</p>
@@ -87,6 +89,9 @@ const Footer = () => {
                 <p>viridiconsults@gmail.com</p>
             </div>
         </div>
+    </div>
+      <hr className='text-white bg-white' />
+      <p className='text-white text-center pt-6'> {date} © Copyrights Viridi Consults Limited</p>
     </div>
   )
 }

@@ -28,7 +28,7 @@ const About = () => {
               serviceDetails.map((items)=>{
                 return (
                   <div key={items.id}>
-                    <p className='md:text-xl text-base text-green-500 font-bold mb-2'>{items.header}</p>
+                    <p className='md:text-xl text-base text-green-900 font-bold mb-2'>{items.header}</p>
                     <p className='md:text-2xl text-xl font-light mb-3'>{items.text}</p>
                   </div>
                 )

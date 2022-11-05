@@ -5,6 +5,7 @@ import Main from '../../assets/services1.jpg'
 import {BsArrowRight} from 'react-icons/bs'
 import {GiHexagonalNut} from 'react-icons/gi'
 import Image1 from '../../assets/painting/paint10BG.jpg'
+import Image2 from '../../assets/winner1.jpg'
 import Image5 from '../../assets/PictureClean/whyImage.jpg'
 
 
@@ -53,7 +54,7 @@ const Services1 = () => {
               serviceDetails.map((items)=>{
                 return (
                   <div key={items.id}>
-                    <p className='md:text-xl text-base text-green-500 font-bold mb-2'>{items.header}</p>
+                    <p className='md:text-xl text-base text-green-900 font-bold mb-2'>{items.header}</p>
                     <p className='md:text-2xl text-xl font-light mb-3'>{items.text}</p>
                   </div>
                 )
@@ -61,11 +62,11 @@ const Services1 = () => {
             }
         </div>
       </div>
-      <div className='lg:px-24 md:px-12 px-6 lg:py-24 md:py-20 py-16 bg-[#c4c4c430]'>
+      <div className='lg:px-48 md:px-12 px-6 lg:py-24 md:py-20 py-16 bg-[#c4c4c430]'>
         <p className='text-center md:text-3xl text-2xl md:mb-16 mb-10 font-bold text-green-900'>Our Services</p>
         <div className=' flex md:flex-row flex-col'>
           <div className='md:w-1/2 w-full'>
-            <img src="https://media.istockphoto.com/photos/fumigator-sanitizing-cleaning-and-disinfection-coronavirus-pandemic-picture-id1308788813?k=20&m=1308788813&s=612x612&w=0&h=BOSQOYEkDFK-_nKYqM55AYIbOdT8FGpSNHUxfwvjAiQ=" className="md:h-[350px] w-full" alt="" />
+            <img src={Image2} className="md:h-[350px] w-full" alt="" />
           </div>
           <ServiceType
             serviceType="FUMIGATION AND PEST CONTROL"
