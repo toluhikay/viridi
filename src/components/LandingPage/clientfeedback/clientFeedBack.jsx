@@ -1,32 +1,36 @@
 import React, {useState, useEffect} from 'react'
 import {GrNext, GrPrevious} from 'react-icons/gr'
 import './client.css'
+import Winner from '../../../assets/man.jpeg'
+import Peach from '../../../assets/peachville.jpeg'
+import Woman from '../../../assets/woman.jpeg'
+import Ashawa from '../../../assets/ashawa.jpeg'
 
 const ClientFeedback = () => {
     const clientFeedback = [
         {
-            id:1, feedback: "this far farther than the ferthest was only a group the be you thing, enjoyable",
-            name: "Thomas Ejembi",
-            job: "Software Engineer",
-            img: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+            id:1, feedback: "The company is reliable, cost-effective, and service delivery was top-notch.  When it comes to residential and office cleaning services, just call on Viridi Consults Limited",
+            name: "Mrs. Justina I.",
+            job: "Business Woman",
+            img: Woman
         },
         {
-            id:2, feedback: "this far farther than the ferthest was only a group the be you thing, enjoyable",
-            name: "Winner Winner",
-            job: "Business Man",
-            img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+            id:2, feedback: "We were looking for a reliable service provider to paint and clean our office before resumption after the December break. Viridi Consults Limited came through.  Job well done!!!",
+            name:'Ashawa Consults',
+            job: "Business Group",
+            img: Ashawa
         },
         {
-            id:3, feedback: "this far farther than the ferthest was only a group the be you thing, enjoyable",
-            name: "Jimmy Jimmy",
-            job: "Business Man",
-            img: "https://images.unsplash.com/photo-1657214059212-104dac959c56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MTV8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+            id:3, feedback: "We are very satisfied with the team's professionalism and the quality of their services.",
+            name: "Peachville",
+            job: "Company",
+            img: Peach
         },
         {
-            id:4, feedback: "this far farther than the ferthest was only a group the be you thing, enjoyable",
-            name: "Odogwu Odogwu",
-            job: "Viridi Viridi",
-            img: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+            id:4, feedback: "Every quarter of the year, Viridi consults limited comes to fumigate and clean my house. Its performance is unmatched.",
+            name: "Winner O.",
+            job: "Business Owner",
+            img: Winner
         },
     ]
 

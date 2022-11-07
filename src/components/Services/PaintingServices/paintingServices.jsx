@@ -10,9 +10,12 @@ import Image2 from '../../../assets/painting/paint3.jpg'
 import Image3 from '../../../assets/painting/paint1.jpg'
 import Image4 from '../../../assets/painting/paint7.jpg'
 import Image5 from '../../../assets/painting/paint13BG.jpg'
-import Image6 from '../../../assets/painting/paint9.jpg'
+import Image6 from '../../../assets/painting.jpg'
 import Image7 from '../../../assets/painting/paint16.jpg'
 import Image8 from '../../../assets/painting/paint15.jpg'
+import Scradding from '../../../assets/scradding.jpeg'
+import LastPic1 from '../../../assets/lastpic1.jpeg'
+import LastPic2 from '../../../assets/lastpic2.jpeg'
 
 
 const PaintingServices = () => {
@@ -42,6 +45,7 @@ const PaintingServices = () => {
         like murals, exquisite wall art, stenciling, and logo painting. So get in touch 
         with us if you want to add some style 
         to your house, workplace, etc..`},
+        {id:5, img: Scradding, title:"SCREEDING PAINT", details:`Wall screeding is a crucial step in the pre-painting process because it guarantees a perfectly smooth wall. Screeding fixes gaps, faults, and cracks in walls. In addition to improving the aesthetic of your walls, it also strengthens the integrity of your painting because it won't peel off as easily. Our screeding process considers among other factors the compatibility of the wall, the durability of the screeding paint, resistance to heat.`},
     ]
 
     const paintAbout = [
@@ -54,19 +58,19 @@ const PaintingServices = () => {
         {id:7, details:`We employ paints that, in contrast to normal paint, are more resistant to adverse weather, such as rain and intense sunlight.`},
     ]
     const images = [
-        {id:1, img: Image1}, {id:2, img: Image2}, {id:3, img: Image3}, {id:4, img: Image4},
-        {id:5, img: Image5}, {id:6, img: Image6}, {id:7, img: Image7}, {id:8, img: Image8},
+        {id:1, img: Image1}, {id:2, img: Image2}, {id:3, img: Image3}, {id:4, img: LastPic1},
+        {id:5, img: Image5}, {id:6, img: Image6}, {id:7, img: Image7}, {id:8, img: LastPic2},
     ]
 
     const NormalRow = ({source, title, details})=>{
         return (
             <div className='lg:px-24 md:px-12 px-6 lg:py-12 md:py-9 py-6 flex md:flex-row flex-col justify-between'>
-                <div className='md:w-[48%] md:mb-0 mb-6 w-full'>
+                <div className='md:w-[35%] md:mb-0 mb-6 w-full'>
                     <img src={source} alt="" className='rounded-lg' />
                 </div>
-                <div className='flex flex-col justify-center items-start md:w-[48%]'>
+                <div className='flex flex-col justify-center items-start md:w-[55%]'>
                     <p className='md:text-3xl text-2xl font-bold text-green-900 mb-6'>{title}</p>
-                    <p className='md:text-xl text-black opacity-50'>{details}</p>
+                    <p className='md:text-base text-black opacity-90'>{details}</p>
                 </div>
             </div>
         )
@@ -75,12 +79,12 @@ const PaintingServices = () => {
     const RowReverse = ({source, title, details})=>{
         return (
             <div className='lg:px-24 md:px-12 bg-[#c4c4c430] px-6 lg:py-12 md:py-9 py-6 flex md:flex-row-reverse flex-col justify-between'>
-                <div className='md:w-[48%] md:mb-0 mb-6 w-full'>
+                <div className='md:w-[35%] md:mb-0 mb-6 w-full'>
                     <img src={source} alt="" className='rounded-lg' />
                 </div>
-                <div className='flex flex-col justify-center items-start md:w-[48%]'>
+                <div className='flex flex-col justify-center items-start md:w-[55%]'>
                     <p className='md:text-3xl text-2xl font-bold text-green-900 mb-6'>{title}</p>
-                    <p className='md:text-xl text-black opacity-50'>{details}</p>
+                    <p className='md:text-base text-black opacity-90'>{details}</p>
                 </div>
             </div>
         )
@@ -88,7 +92,7 @@ const PaintingServices = () => {
 
   return (
     <Fragment>
-        <AboutHero title="Services - Painting Services"/>
+        <AboutHero title="Services - Painting"/>
         <div className='lg:px-24 md:px-12 px-6 lg:py-12 md:py-4 py-4 flex flex-col justify-center items-center'>
             <p className='lg:text-3xl font-bold text-xl mb-3'><span className='text-green-900'>Painting</span>  Services We Offer</p>
             <p className='font-bold mt-6'><span className='text-green-900'>Residential painting services we offer include:
@@ -106,7 +110,7 @@ const PaintingServices = () => {
                         return (
                             <div key={items.id} className="flex justify-center items-center mb-4">
                                 <GiCheckMark className='mr-4 text-2xl font-bold text-green-900' />
-                                <p className='text-xl font-extralight opacity-50'>{items.details}</p>
+                                <p className='text-base font-extralight opacity-90'>{items.details}</p>
                             </div>
                         )
                     })
@@ -135,6 +139,12 @@ const PaintingServices = () => {
             source={ paintServices[3].img }
             title = { paintServices[3].title }
             details = { paintServices[3].details }
+        />
+
+        <NormalRow
+            source={ paintServices[4].img }
+            title = { paintServices[4].title }
+            details = { paintServices[4].details }
         />
         
         <div className='lg:px-24 md:px-12 px-6 lg:py-12 md:py-4 py-4 flex flex-col justify-center items-center'>

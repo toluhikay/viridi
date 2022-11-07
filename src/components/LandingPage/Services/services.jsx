@@ -85,8 +85,7 @@ const Services = () => {
             every month? Get in touch with Viridi 
             Consults Limited. We offer flexible 
             scheduling so you can choose a time that 
-            suits you. Our services are cost-effective 
-            and reliable.`,
+            suits you.`,
             icon: <GiGreenhouse className='text-5xl absolute bottom-1 right-1 z-10 group-hover:right-5 transition-all group-hover:text-green-900 group-hover:text-6xl'/>
         },
         {
@@ -103,7 +102,7 @@ const Services = () => {
         },
         {
             id:11, serviceName: "Cleaning of Glasses",
-            serviceDetail: `Cleaning of Glasses 
+            serviceDetail: ` 
             We can restore your dead glasses and 
             windows to life, make them gleam and 
             bright, and give them the nice, classy look 
@@ -130,7 +129,7 @@ const Services = () => {
             {
                 services.map((items)=>{
                     return (
-                        <div key={items.id} className=" shadow-xl group text-black md:w-[45%]  lg:w-[23%] m-2 relative md:h-56 w-full lg:h-[300px] sm:h-44 h-52 p-4 rounded-md">
+                        <div key={items.id} className=" shadow-xl group text-black md:w-[45%]  lg:w-[23%] m-2 relative md:h-56 w-full lg:h-[300px] sm:h-44 h-auto p-4 rounded-md">
                             <p className='xl:text-2xl lg:text-xl font-bold'>{items.serviceName}</p>
                             <p className='z-20 relative text-xs leading-loose group-hover:text-gray-900'>{items.serviceDetail}</p>
                             <span className='text-green-900'>{items.icon}</span>

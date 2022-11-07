@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react'
 import AboutHero from '../../About/AboutHero/aboutHero'
+import Fumigation1 from '../../../assets/fumigation1.jpeg'
 
 const Fumigation = () => {
 
     const fumigationServices = [
-        {id:1, img: "https://media.istockphoto.com/photos/fumigator-sanitizing-cleaning-and-disinfection-coronavirus-pandemic-picture-id1308788813?k=20&m=1308788813&s=612x612&w=0&h=BOSQOYEkDFK-_nKYqM55AYIbOdT8FGpSNHUxfwvjAiQ=", 
+        {id:1, img: Fumigation1, 
         title:"FUMIGATION", 
         details:`We can be trusted to offer environment-friendly and 
         reliable pest management measures for residential, 
@@ -62,7 +63,7 @@ const Fumigation = () => {
                 </div>
                 <div className='flex flex-col justify-center items-start md:w-[48%]'>
                     <p className='md:text-3xl text-2xl font-bold text-green-900 mb-6'>{title}</p>
-                    <p className='md:text-xl text-black opacity-50'>{details}</p>
+                    <p className='md:text-base text-black opacity-90'>{details}</p>
                 </div>
             </div>
         )
@@ -76,7 +77,7 @@ const Fumigation = () => {
                 </div>
                 <div className='flex flex-col justify-center items-start md:w-[48%]'>
                     <p className='md:text-3xl text-2xl font-bold text-green-900 mb-6'>{title}</p>
-                    <p className='md:text-xl text-black opacity-50'>{details}</p>
+                    <p className='md:text-base text-black opacity-90'>{details}</p>
                 </div>
             </div>
         )

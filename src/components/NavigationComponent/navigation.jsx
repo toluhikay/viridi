@@ -4,7 +4,7 @@ import { FiPhoneCall } from 'react-icons/fi'
 import {SiMinutemailer} from 'react-icons/si'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import Logo from '../../assets/logo.jpeg'
-import {FaFacebook, FaInstagram, FaTwitter} from 'react-icons/fa'
+import { FaInstagram, FaLinkedin, FaWhatsapp} from 'react-icons/fa'
 
 const Navigation = () => {
   const [navOpen, setNavOpen] = useState(true)
@@ -17,13 +17,13 @@ const Navigation = () => {
     {
       id: 1, 
       name: "facebook",
-      logo: <FaFacebook/>,
+      logo: <FaLinkedin/>,
       link: "www.facebook.com"
     },
     {
       id: 2, 
       name: "twitter",
-      logo: <FaTwitter/>,
+      logo: <FaWhatsapp/>,
       link: "www.facebook.com"
     },
     {
@@ -63,7 +63,7 @@ const Navigation = () => {
               <div className='flex justify-between items-center w-full md:w-1/3'>
                 {/* <p className='lg:text-4xl md:text-2xl text-xl font-bold'>Viridi <span>Consult Ltd.</span></p> */}
                 <Link to='/'>
-                  <img src={Logo} alt="" className='w-[50px] h-[50px]' />
+                  <img src={Logo} alt="" className='w-[70px] h-[70px]' />
                 </Link>
                 <div>
                   <GiHamburgerMenu className='text-2xl md:hidden cursor-pointer hover:text-green-900' onClick={handleNavOpen}/>

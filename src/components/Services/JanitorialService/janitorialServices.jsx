@@ -39,7 +39,7 @@ const JanitorialService = () => {
 
   return (
     <Fragment>
-    <AboutHero title="Services - Janitorial Services"/>
+    <AboutHero title="Services - Janitorial"/>
     <div className="lg:px-24 bg-center bg-cover bg-no-repeat bg-fixed md:px-12 px-6 lg:py-6 md:py-6 py-3 flex flex-col justify-center items-center text-center">
         <p className='lg:text-3xl font-bold text-xl mb-3'><span className='text-green-900'>Janitorial</span>  Services</p>
         <p className='text-sm'>
@@ -54,7 +54,7 @@ const JanitorialService = () => {
                         return (
                             <div key={items.id} className="md:w-[32%] w-full h-[250px] flex justify-center md:justify-start items-center flex-col">
                                 <img src={items.img} alt="" className='w-[150px] h-[150px] rounded-full border-4 border-green-900'/>
-                                <p className='text-xs mt-3'>{items.text}</p>
+                                <p className='text-sm mt-3'>{items.text}</p>
                             </div>
                         )
                     })
@@ -68,7 +68,7 @@ const JanitorialService = () => {
         <div>
             {
                 servicesJanitorial.map((items)=>{
-                    return <p className='mb-6 text-justify'><span className='md:text-2xl text-xl font-bold text-green-900 mr-3'>{items.title}</span><span className='md:text-xl text-base font-extralight '>{items.details}</span></p>
+                    return <p className='mb-6 text-justify'><span className='md:text-2xl text-xl font-bold text-green-900 mr-3'>{items.title}</span><span className='md:text-base text-sm font-extralight '>{items.details}</span></p>
                 })
             }
         </div>

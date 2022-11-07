@@ -9,7 +9,7 @@ import Image4 from '../../../assets/PictureClean/image1.jpg'
 const Gallery = () => {
 
     const images = [
-        {id:1, img: Image1}, {id:2, img: Image2}, {id:3, img: Image3},{id:4, img: Image4 }
+         {id:2, img: Image2}, {id:3, img: Image3}, {id:1, img: Image1}, {id:4, img: Image4 }
     ]
 
   return (
