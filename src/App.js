@@ -10,11 +10,13 @@ import JanitorialService from './components/Services/JanitorialService/janitoria
 import Fumigation from './components/Services/FumingationServices/fumigation';
 import ScrollToTop from './scroll';
 import { Fragment } from 'react';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <Fragment>
       <ScrollToTop>
+      <Toaster/>
         <Routes>
           <Route path='/' element={<Navigation/>}>
             <Route index element={<LandingPage/>}></Route>

@@ -16,21 +16,21 @@ const Navigation = () => {
   const socials = [
     {
       id: 1, 
-      name: "facebook",
+      name: "linkedin",
       logo: <FaLinkedin/>,
-      link: "www.facebook.com"
+      link: "https://www.linkedin.com/company/viridi-consults-limited/"
     },
     {
       id: 2, 
-      name: "twitter",
+      name: "whatsapp",
       logo: <FaWhatsapp/>,
-      link: "www.facebook.com"
+      link: "https://api.whatsapp.com/send?phone=2347081897072&text=Welcome%20to%20Viridi%20Consults%20Limited.%20We%20offer%20Janitorial,%20fumigation%20and%20painting%20services.%20Kindly%20drop%20your%20message,%20we%20will%20get%20in%20touch%20shortly"
     },
     {
       id: 3, 
       name: "instagram",
       logo: <FaInstagram/>,
-      link: "www.facebook.com"
+      link: "https://www.instagram.com/viridiconsultslimited/"
     },
   ]
   const links = [
@@ -49,7 +49,7 @@ const Navigation = () => {
                 socials.map((item)=>{
                   return(
                     <Fragment>
-                      <a href={item.link} key={item.id} className="ml-3">{item.logo}</a>
+                      <a href={item.link} key={item.id} target="_blank" rel='noreferrer' className="ml-3">{item.logo}</a>
                     </Fragment>
                   )
                 })

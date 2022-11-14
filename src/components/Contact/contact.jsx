@@ -1,23 +1,60 @@
-import React from 'react'
+import React, {useRef, useState} from 'react'
 import AboutHero from '../About/AboutHero/aboutHero'
 import {ImLocation2, ImPhone} from 'react-icons/im'
 import { SiMinutemailer } from 'react-icons/si'
+import emailjs from '@emailjs/browser'
+import swal from 'sweetalert'
 
-const FormDetails =({label, type, placeholder})=>{
+const FormDetails =({label, type, placeholder, name, value})=>{
   return(
     <div className='flex flex-col w-full mb-3'>
       <label className='text-green-900 mb-3' htmlFor="">{label}</label>
-      <input className='border-0 outline-none border-b border-[#c4c4c4]' placeholder={placeholder} type={type} />
+      <input className='border-0 outline-none border-b border-[#c4c4c4]' placeholder={placeholder} value={value} name={name} type={type} />
     </div>
   )
 }
 
+
+
 const Contact = () => {
+    
     const contactInfo = [
       {id:1, icon: <ImLocation2/>, contactMethod: "Address", contactDetails: `Innovation Plaza, Suite C7-C10, Plot 770, Idris Gidado Street, Wuye Abuja`},
       {id:2, icon: <ImPhone/>, contactMethod: "Phone", contactDetails: `(+234) 7081897072, 8130508940`},
       {id:3, icon: <SiMinutemailer/>, contactMethod: "Email", contactDetails: `viridiconsults@gmail.com`},  
     ]
+
+    const form = useRef()
+    const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
+    const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID
+    const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY
+
+
+    const sendEmail =(e)=>{
+      e.preventDefault()
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+          .then((result) => {
+              if (result.status === 200){
+                  swal({
+                      title: "Thank You!",
+                      text: "Message Sent Successfully!",
+                      icon: "success",
+                      button: true,
+                    }).then(()=>{
+                      window.location.reload()
+                    });
+              }
+          }, (error) => {
+             if (error){
+              swal({
+                  title: "Oops!",
+                  text: "Message Not Sent!",
+                  icon: "error",
+                  button: "Try Again",
+                });
+             }
+          });
+  } 
 
 
   return (
@@ -36,14 +73,14 @@ const Contact = () => {
           }
         </div>
         <div className='lg:px-24 md:px-12 px-6 lg:py-12 md:py-6 py-12  flex flex-col md:flex-row md:justify-between  justify-center md:items-start items-center h-auto'>
-          <form action="" className='md:w-1/2 w-full md:shadow-lg md:p-6 p-3 rounded-lg'>
+          <form ref={form}  className='md:w-1/2 w-full md:shadow-lg md:p-6 p-3 rounded-lg' onSubmit={sendEmail}>
             <p className='md:text-4xl font-light mb-12 text-2xl'>Contact Us</p>
-            <FormDetails label='FULL NAME' type='text' placeholder="Name" />
-            <FormDetails label='EMAIL ADDRESS' type='email' placeholder="Email"/>
-            <FormDetails label='SUBJECT' type='text' placeholder="Subject" />
+            <FormDetails label='FULL NAME' name='from_name' type='text' placeholder="Name" />
+            <FormDetails label='EMAIL ADDRESS' name='email' type='email' placeholder="Email"/>
+            <FormDetails label='SUBJECT' name="service_name" type='text' placeholder="Subject" />
             <div className='flex flex-col w-full mb-3'>
               <label className='text-green-900 mb-3' htmlFor="">MESSAGE</label>
-              <textarea className='border-0 outline-none border-b border-[#c4c4c4]' name="" id="" cols="30" rows="3"></textarea>
+              <textarea className='border-0 outline-none border-b border-[#c4c4c4]' name="message" id="" cols="30" rows="3"></textarea>
             </div>
             <button className='bg-green-900 text-white font-semibold p-3 outline-none rounded-lg' type="submit">SEND MESSAGE</button>         
           </form>
