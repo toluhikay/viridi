@@ -86,7 +86,7 @@ const Footer = () => {
 
             <div className='text-white opacity-50 flex justify-start items-center'>
                 <SiMinutemailer className='text-2xl mr-3'/>
-                <p>viridiconsults@gmail.com</p>
+                <p>info@viridiconsultsltd.com.ng</p>
             </div>
         </div>
     </div>

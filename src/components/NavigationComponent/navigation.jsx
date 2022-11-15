@@ -42,7 +42,7 @@ const Navigation = () => {
         <div className='lg:px-24 md:px-12 px-6 bg-green-900 text-white py-1 flex justify-between items-center'>
             <div className='flex flex-col md:flex-row'>
                 <p className='flex items-center justify-start md:justify-center text-xs mr-2'><FiPhoneCall className='mr-1'/> (+234) 7081897072, 8130508940</p>
-                <p className='flex items-center justify-start md:justify-center text-xs'><SiMinutemailer className='mr-1'/> viridiconsults@gmail.com</p>
+                <p className='flex items-center justify-start md:justify-center text-xs'><SiMinutemailer className='mr-1'/> info@viridiconsultsltd.com.ng</p>
             </div>
             <div className='flex'>
               {

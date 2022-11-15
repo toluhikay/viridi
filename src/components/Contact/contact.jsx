@@ -21,7 +21,7 @@ const Contact = () => {
     const contactInfo = [
       {id:1, icon: <ImLocation2/>, contactMethod: "Address", contactDetails: `Innovation Plaza, Suite C7-C10, Plot 770, Idris Gidado Street, Wuye Abuja`},
       {id:2, icon: <ImPhone/>, contactMethod: "Phone", contactDetails: `(+234) 7081897072, 8130508940`},
-      {id:3, icon: <SiMinutemailer/>, contactMethod: "Email", contactDetails: `viridiconsults@gmail.com`},  
+      {id:3, icon: <SiMinutemailer/>, contactMethod: "Email", contactDetails: `info@viridiconsultsltd.com.ng`},  
     ]
 
     const form = useRef()
