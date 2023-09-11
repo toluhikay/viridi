@@ -42,7 +42,7 @@ const Navigation = () => {
 
 	return (
 		<Fragment>
-			<div className='lg:px-24 md:px-12 px-6 bg-secondary text-white py-1 flex justify-between items-center'>
+			<div className='lg:px-24 md:px-12 px-6 bg-secondary z-[999999] text-white py-1 flex justify-between items-center'>
 				<div className='flex flex-col md:flex-row'>
 					<p className='flex items-center justify-start md:justify-center text-xs mr-2'>
 						<FiPhoneCall className='mr-1' /> (+234) 7081897072, 8130508940
@@ -64,7 +64,7 @@ const Navigation = () => {
 				</div>
 			</div>
 
-			<div className='lg:px-24 sticky z-[10000] top-0 left-0 right-0 bg-white md:px-12 px-6 lg:py-6 md:py-4 py-3 '>
+			<div className='lg:px-24 sticky z-[999990000] top-0 left-0 right-0 bg-white md:px-12 px-6 lg:py-6 md:py-4 py-3 '>
 				<div className='flex justify-between md:items-center'>
 					<div className='flex justify-between items-center w-full md:w-1/3'>
 						{/* <p className='lg:text-4xl md:text-2xl text-xl font-bold'>Viridi <span>Consult Ltd.</span></p> */}

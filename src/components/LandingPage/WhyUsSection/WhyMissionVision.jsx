@@ -1,9 +1,6 @@
-import HighLightPicture from "components/HighLightPicture.jsx/highlightpicture";
 import React, { Fragment } from "react";
 import { MdCleanHands, MdOutlineSmokeFree } from "react-icons/md";
 import { FaHandshake, FaPeopleCarry, FaSmileWink } from "react-icons/fa";
-import { RiCustomerService2Fill, RiTeamFill } from "react-icons/ri";
-import { SiHandshake } from "react-icons/si";
 import { GiThink } from "react-icons/gi";
 
 const WhyMissionVision = ({ title }) => {
@@ -54,8 +51,16 @@ const WhyMissionVision = ({ title }) => {
 						<p>Welcome to Viridi Consults Limited, where our unwavering commitment is to foster a brighter future for our planet. Rooted in an unyielding commitment to sustainability and steered by a team of seasoned experts, we specialize in crafting tailored environmental consulting solutions that consistently surpass the highest standards of excellence.</p>
 					</div>
 				</div>
-				<div className='lg:py-16 py-12 md:pl-12 px-3 flex flex-col md:w-[80%] w-full'>
-					<p className='lg:text-3xl md:text-2xl text-xl text-center font-bold'>Our core values</p>
+				<div className='lg:pt-16 pt-12 px-3 flex flex-col text-center md:w-[80%] w-full'>
+					<p className='lg:text-3xl md:text-2xl text-xl text-center mb-6 font-bold'>
+						Our <span className='text-secondary'>Mission</span>
+					</p>
+					<p>Our mission is to help our clients navigate the complexities of environmental management, ensuring responsible and sustainable practices. </p>
+				</div>
+				<div className='lg:py-16 py-12 px-3 flex flex-col md:w-[80%] w-full'>
+					<p className='lg:text-3xl md:text-2xl text-xl text-center font-bold'>
+						Our <span className='text-secondary'>Core Values</span>
+					</p>
 					<div className='flex flex-wrap w-full justify-between mt-6'>
 						{why.map((items) => {
 							return (
