@@ -21,16 +21,14 @@ function App() {
 		<Fragment>
 			<ScrollToTop>
 				<Toaster />
-				<div className='overflow-hidden'>
-					<Routes>
-						<Route path='/' element={<Navigation />}>
-							<Route index element={<LandingPage />}></Route>
-							<Route path='/about' element={<About />}></Route>
-							<Route path='/services' element={<Services1 />}></Route>
-							<Route path='/contact' element={<Contact />}></Route>
-						</Route>
-					</Routes>
-				</div>
+				<Routes>
+					<Route path='/' element={<Navigation />}>
+						<Route index element={<LandingPage />}></Route>
+						<Route path='/about' element={<About />}></Route>
+						<Route path='/services' element={<Services1 />}></Route>
+						<Route path='/contact' element={<Contact />}></Route>
+					</Route>
+				</Routes>
 				<Footer />
 			</ScrollToTop>
 		</Fragment>

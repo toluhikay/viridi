@@ -4,7 +4,7 @@ import ServicesMain from "./ServicesMain";
 
 const Services1 = () => {
 	return (
-		<div>
+		<div className='overflow-hidden'>
 			<div className='lg:px-24 bg-slider3 bg-[#000] h-[80vh] bg-blend-darken bg-black/70 bg-center bg-cover bg-no-repeat text-white bg-fixed md:px-12 px-6 lg:py-16 md:py-6 py-3 flex flex-col justify-center items-center'>
 				<p className='lg:text-4xl font-bold md:text-3xl text-white text-2xl mb-3'>{"Viridi Consult Services"}</p>
 			</div>

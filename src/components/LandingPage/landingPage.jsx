@@ -10,7 +10,7 @@ import WhyChooseUs from "./WhyUsSection/WhyChooseUs";
 const LandingPage = () => {
 	const navigate = useNavigate();
 	return (
-		<Fragment>
+		<div className='overflow-hidden'>
 			<Hero />
 			<div className='bg-secondary px-[15px] flex flex-col items-center justify-center py-12'>
 				<button className='text-white border border-white rounded py-3 px-5 hover:text-secondary hover:bg-white transition-all' onClick={() => navigate("/services")}>
@@ -26,7 +26,7 @@ const LandingPage = () => {
 				</button>
 			</div>
 			<Consultation />
-		</Fragment>
+		</div>
 	);
 };
 

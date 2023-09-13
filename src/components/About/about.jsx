@@ -7,7 +7,7 @@ import OurCertifications from "./OurCompany/OurCertifications.jsx";
 
 const About = () => {
 	return (
-		<div>
+		<div className='overflow-hidden'>
 			<AboutHero title='About Us' subtitle={"Your Environmental Partner in a Changing World"} />
 			<OurCompany />
 			<WhereWeWork />

@@ -57,7 +57,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div>
+		<div className='overflow-hidden'>
 			<AboutHero title='Contact Us' />
 			<div className='lg:px-24 md:px-12 px-6 lg:py-12 md:py-6 py-12  flex flex-col md:flex-row md:justify-between  justify-center md:items-start items-center'>
 				{contactInfo.map((items) => {
