@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import AboutHero from "../About/AboutHero/aboutHero";
 import { ImLocation2, ImPhone } from "react-icons/im";
 import { SiMinutemailer } from "react-icons/si";
@@ -11,7 +11,7 @@ const FormDetails = ({ label, type, placeholder, name, value }) => {
 			<label className='text-green-900 mb-3' htmlFor=''>
 				{label}
 			</label>
-			<input className='border-0 outline-none border-b border-[#c4c4c4]' placeholder={placeholder} value={value} name={name} type={type} />
+			<input className='border-0 outline-none border-b border-[#c4c4c4]' placeholder={placeholder} required value={value} name={name} type={type} />
 		</div>
 	);
 };
@@ -81,7 +81,7 @@ const Contact = () => {
 						<label className='text-green-900 mb-3' htmlFor=''>
 							MESSAGE
 						</label>
-						<textarea className='border-0 outline-none border-b border-[#c4c4c4]' name='message' id='' cols='30' rows='3'></textarea>
+						<textarea required className='border-0 outline-none border-b border-[#c4c4c4]' name='message' id='' cols='30' rows='3'></textarea>
 					</div>
 					<button className='bg-green-900 text-white font-semibold p-3 outline-none rounded-lg' type='submit'>
 						SEND MESSAGE

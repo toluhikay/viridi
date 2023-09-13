@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 .env
+/.env
 
 
 # testing
@@ -12,6 +13,7 @@
 
 # production
 /build
+build.zip
 
 # misc
 .DS_Store

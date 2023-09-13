@@ -16,7 +16,7 @@ const Footer = () => {
 			id: 2,
 			name: "whatsapp",
 			logo: <FaWhatsapp />,
-			link: "https://api.whatsapp.com/send?phone=2347081897072&text=Welcome%20to%20Viridi%20Consults%20Limited.%20We%20offer%20Janitorial,%20fumigation%20and%20painting%20services.%20Kindly%20drop%20your%20message,%20we%20will%20get%20in%20touch%20shortly",
+			link: "https://api.whatsapp.com/send?phone=2347043837916&text=Welcome%20to%20Viridi%20Consults%20Limited.%20Your%20trusted%20partner%20in%20Environmental%20%20Consulting.%20%20How%20may%20we%20be%20of%20help%20to%20you,%20today?",
 		},
 		{
 			id: 3,
