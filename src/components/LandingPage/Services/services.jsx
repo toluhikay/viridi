@@ -14,7 +14,7 @@ const Services = () => {
 					</div>
 				</div>
 				<div data-aos='fade-left' className='md:w-[69%] w-full items-center flex justify-end bg-secondary md:h-full h-auto py-[100px]'>
-					<div className='lg:w-[60%] md:w-[100%] w-[90%]  px-[15px] text-white font-light'>
+					<div className='lg:w-[60%] md:w-[70%] w-[90%]  px-[15px] text-white font-light'>
 						{services.map((item, index) => {
 							return (
 								<div className='mb-1 flex items-center' key={index}>
