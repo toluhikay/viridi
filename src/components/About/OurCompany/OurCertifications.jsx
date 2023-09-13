@@ -1,7 +1,7 @@
 import React from "react";
 
 const OurCertifications = () => {
-	const Certifications = ["Federal Ministry of Environment (FMEnv) ", "National Environmental Standards and Regulations Enforcement Agency (NESREA)", "State Regulatory Agencies", "Department of Petroleum Resources (DPR)", "Environmental Health Registration Council of Nigeria (EHRCN)", "Abuja Environmental Protection Board (AEPB)", "And a host of others"];
+	const Certifications = ["Federal Ministry of Environment (FMEnv) ", "National Environmental Standards and Regulations Enforcement Agency (NESREA)", "State Regulatory Agencies", "Department of Petroleum Resources (DPR)", "Environmental Health Officers Registration Council of Nigeria (EHORECON)", "Abuja Environmental Protection Board (AEPB)", "And a host of others"];
 	return (
 		<div className='w-full lg:px-24 md:px-12 px-6 lg:py-24 bg-secondary md:py-20 py-16 flex flex-col justify-center items-center'>
 			<p className='lg:text-3xl md:text-2xl text-xl text-center font-bold text-white'>Our Certifications</p>
