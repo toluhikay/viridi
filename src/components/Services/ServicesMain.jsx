@@ -30,7 +30,13 @@ const ServicesMain = () => {
 				<div>
 					{ServicesData.map((item, index) => {
 						return (
-							<div className='border border-[#08244d36] sm:py-[26px] py-5 px-7 sm:px-[35px] text-start md:mb-[49px] mb-[20px]' key={index}>
+							<div
+								className='border border-[#08244d36] cursor-pointer sm:py-[26px] py-5 px-7 sm:px-[35px] text-start md:mb-[49px] mb-[20px]'
+								key={index}
+								onClick={() => {
+									dropDownOpen !== item.id ? setDropDownOpen(item.id) : setDropDownOpen(0);
+								}}
+							>
 								<div className={`flex justify-between items-center ${dropDownOpen === item.id && "mb-6"}`}>
 									<div className='flex items-center w-[90%]'>
 										<div className='w-[39px] sm:mr-12 mr-2 h-[26px] bg-secondary border-white border'></div>

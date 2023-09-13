@@ -94,12 +94,11 @@ const Contact = () => {
 					<p className='mt-12 mb-3 text-xl font-extralight'>Call us, Send us a Message and we will reply you typically within 24 hours. </p>
 					<p className='text-xl'>
 						Sunday: Closed <br /> <br />
-						Monday - Friday: 9am - 5pm <br /> <br />
-						Saturday: 10am - 4pm
+						Monday - Friday: 9am - 5pm
 					</p>
 				</div>
 			</div>
-			<iframe className='w-full h-[450px]' id='gmap_canvas' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.1229236612485!2d7.440779714947444!3d9.052550691111813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b341b21d393%3A0xbf5f5f061cd195ee!2sInnovation%20Plaza!5e0!3m2!1sen!2sng!4v1667762942778!5m2!1sen!2sng' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade' title='map1'></iframe>
+			<iframe className='w-full h-[450px]' id='gmap_canvas' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.1229236612485!2d7.440779714947444!3d9.052550691111813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b341b21d393%3A0xbf5f5f061cd195ee!2sInnovation%20Plaza!5e0!3m2!1sen!2sng!4v1667762942778!5m2!1sen!2sng' allowFullScreen='' loading='lazy' referrerPolicy='no-referrer-when-downgrade' title='map1'></iframe>
 		</div>
 	);
 };

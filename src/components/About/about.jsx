@@ -1,9 +1,6 @@
 import React from "react";
-import Why from "../LandingPage/WhyUsSection/why.jsx";
 import AboutHero from "./AboutHero/aboutHero.jsx";
-import Main from "../../assets/services1.jpg";
-import Quotation from "../LandingPage/Quotation/quotation.jsx";
-// import ClientFeedback from '../LandingPage/clientfeedback/clientFeedBack.jsx'
+import Main from "../../assets/NewAssets/Team.jpeg";
 import OurCompany from "./OurCompany/ourCompany.jsx";
 import WhereWeWork from "./OurCompany/WhereWeWork.jsx";
 import OurCertifications from "./OurCompany/OurCertifications.jsx";

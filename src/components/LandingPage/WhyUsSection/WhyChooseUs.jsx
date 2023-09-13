@@ -11,11 +11,11 @@ const WhyChooseUs = () => {
 	return (
 		<div className='bg-secondary/20 lg:px-24 md:px-12 px-6 py-20 flex flex-col items-center justify-center'>
 			<p className='lg:text-3xl md:text-2xl text-xl w-full text-secondary mb-6 font-bold'>Why Choose Us</p>
-			<div className='flex w-full flex-wrap items-center my-10 justify-center'>
+			<div className='flex w-full flex-wrap items-center my-10 justify-around gap-8'>
 				{WhyUsDetails.map((item, index) => {
 					return (
-						<div className={`flex xl:w-2/3 md:w-[80%] ${index % 2 === 0 ? "justify-start" : "justify-end"}`} key={index}>
-							<div className='bg-white/80 min-h-[300px] flex flex-col justify-center sm:w-1/2 w-full sm:mb-0 mb-12 p-12'>
+						<div className={`flex md:w-[48%] ${index % 2 === 0 ? "justify-start" : "justify-end"}`} key={index}>
+							<div className='bg-white/80 min-h-[300px] flex flex-col justify-center w-full sm:mb-0 p-12'>
 								<p className='text-primary text-3xl font-bold mb-3'>0{item.id}</p>
 								<p className='text-secondary font-bold mb-6'>{item.title}</p>
 								<p className='text-xl font-light'>{item.details}</p>

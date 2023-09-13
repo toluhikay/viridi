@@ -6,7 +6,7 @@ module.exports = {
 			backgroundImage: {
 				"hero-pattern": "url('/src/assets/painting/hero.jpg')",
 				slider1: "url('/src/assets/NewAssets/HeroViridi1.jpg')",
-				slider2: "url('/src/assets/NewAssets/HeroViridi2.jpg')",
+				slider2: "url('/src/assets/NewAssets/HeroViridi3.jpeg')",
 				slider3: "url('/src/assets/NewAssets/HeroViridi3.jpg')",
 				services: "url('/src/assets/painting/services.jpg')",
 				consulting: "url('/src/assets/painting/paint6Hero.jpg')",
