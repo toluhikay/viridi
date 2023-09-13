@@ -98,7 +98,9 @@ const Contact = () => {
 					</p>
 				</div>
 			</div>
-			<iframe className='w-full h-[450px]' id='gmap_canvas' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.1229236612485!2d7.440779714947444!3d9.052550691111813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b341b21d393%3A0xbf5f5f061cd195ee!2sInnovation%20Plaza!5e0!3m2!1sen!2sng!4v1667762942778!5m2!1sen!2sng' allowFullScreen='' loading='lazy' referrerPolicy='no-referrer-when-downgrade' title='map1'></iframe>
+			<div className='w-full bg-secondary'>
+				<iframe className='w-full h-[450px]' id='gmap_canvas' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.1229236612485!2d7.440779714947444!3d9.052550691111813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b341b21d393%3A0xbf5f5f061cd195ee!2sInnovation%20Plaza!5e0!3m2!1sen!2sng!4v1667762942778!5m2!1sen!2sng' allowFullScreen='' loading='lazy' referrerPolicy='no-referrer-when-downgrade' title='map1'></iframe>
+			</div>
 		</div>
 	);
 };

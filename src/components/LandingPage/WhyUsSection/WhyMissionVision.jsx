@@ -46,7 +46,7 @@ const WhyMissionVision = ({ title }) => {
 	return (
 		<Fragment>
 			<div className='xl:px-24 lg:px-12 px-6 flex py-12 flex-wrap w-full md:flex-row items-center justify-center'>
-				<div className='lg:w-[50%] md:w-[65%] text-white bg-secondary rounded px-[15px] py-16 text-[20px] leading-9 font-extralight tracking-wide w-full h-full'>
+				<div data-aos='fade-right' className='lg:w-[50%] md:w-[65%] text-white bg-secondary rounded px-[15px] py-16 text-[20px] leading-9 font-extralight tracking-wide w-full h-full'>
 					<div>
 						<p>Welcome to Viridi Consults Limited, where our unwavering commitment is to foster a brighter future for our planet. Rooted in an unyielding commitment to sustainability and steered by a team of seasoned experts, we specialize in crafting tailored environmental consulting solutions that consistently surpass the highest standards of excellence.</p>
 					</div>
@@ -62,9 +62,9 @@ const WhyMissionVision = ({ title }) => {
 						Our <span className='text-secondary'>Core Values</span>
 					</p>
 					<div className='flex flex-wrap w-full justify-between mt-6'>
-						{why.map((items) => {
+						{why.map((items, index) => {
 							return (
-								<div key={items.id} className='md:w-[48%] mb-12 items-center  w-full flex flex-col text-center'>
+								<div data-aos={index % 2 === 0 ? "fade-right" : "fade-left"} key={items.id} className='md:w-[48%] mb-12 items-center  w-full flex flex-col text-center'>
 									<div className='mr-3'>
 										<div className='bg-primary rounded-full xl:p-3 p-1 h-auto w-auto'>{items.icon}</div>
 									</div>

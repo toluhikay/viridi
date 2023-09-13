@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
 			<div className='flex w-full flex-wrap items-center my-10 justify-around gap-8'>
 				{WhyUsDetails.map((item, index) => {
 					return (
-						<div className={`flex md:w-[48%] ${index % 2 === 0 ? "justify-start" : "justify-end"}`} key={index}>
+						<div data-aos={index % 2 !== 0 ? "fade-right" : "fade-left"} className={`flex md:w-[48%] ${index % 2 === 0 ? "justify-start" : "justify-end"}`} key={index}>
 							<div className='bg-white/80 min-h-[300px] flex flex-col justify-center w-full sm:mb-0 p-12'>
 								<p className='text-primary text-3xl font-bold mb-3'>0{item.id}</p>
 								<p className='text-secondary font-bold mb-6'>{item.title}</p>
